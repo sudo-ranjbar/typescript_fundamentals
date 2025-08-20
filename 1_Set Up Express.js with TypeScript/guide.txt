@@ -1,0 +1,46 @@
+node -v > .nvmrc
+**This way, anyone working on your project can quickly install and switch to the specified version in the file.**
+==============================================================================
+nvm install
+nvm use
+==============================================================================
+npm i express
+==============================================================================
+npm i -D typescript @types/node @types/express @tsconfig/node22
+==============================================================================
+npx tsc --init
+==============================================================================
+npx tsc 
+**Turns .ts files into compiled .js files, which can then be run by Node.js.**
+==============================================================================
+node dist/index.js 
+==============================================================================
+npm i -D tsx
+npx tsx src/index.ts
+**We may now install tsx and run our index.ts file, without requiring compilation.**
+==============================================================================
+npm i -D prettier
+==============================================================================
+npm i -D eslint typescript-eslint @eslint/js eslint-plugin-perfectionist
+touch eslint.config.js
+==============================================================================
+npm i -D vitest @vitest/coverage-v8 @vitest/eslint-plugin
+**Running unit test.**
+==============================================================================
+husky/and lint stage has not included......
+==============================================================================
+
+npm run dev          : runs the index.ts file without typechecking and automatically restarts the Node.js server whenever a file is saved, which allows for quick iterations while working on a project.
+npm run start        : runs the compiled JavaScript files (that is, the same files that would run in your production environment).
+npm run build        : runs the TypeScript typechecker and outputs the compiled JavaScript files.
+npm run type-check   : runs the TypeScript typechecker, without any file output.
+npm run lint         : runs ESLint throughout all your files and shows which files have yet to be linted.
+npm run lint:fix     : runs ESLint throughout all your files and applies automatic linting whenever possible.
+npm run format       : runs Prettier throughout all your files and applies formatting.
+npm run format:check : runs Prettier throughout all your files and shows which files have yet to be formatted.
+npm run test         : runs tests on the project, which we won’t cover in this tutorial, but are typically implemented with thejest package.
+
+============
+for more refrence visit:
+https://medium.com/@gabrieldrouin/node-js-2025-guide-how-to-setup-express-js-with-typescript-eslint-and-prettier-b342cd21c30d
+============
