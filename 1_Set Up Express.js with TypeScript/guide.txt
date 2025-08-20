@@ -25,9 +25,10 @@ npm i -D eslint typescript-eslint @eslint/js eslint-plugin-perfectionist
 touch eslint.config.js
 ==============================================================================
 npm i -D vitest @vitest/coverage-v8 @vitest/eslint-plugin
-**Running unit test.**
+**Running unit tests.**
 ==============================================================================
-husky/and lint stage has not included......
+npm i -D husky lint-staged
+npx husky init
 ==============================================================================
 
 npm run dev          : runs the index.ts file without typechecking and automatically restarts the Node.js server whenever a file is saved, which allows for quick iterations while working on a project.
